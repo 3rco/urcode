@@ -1,9 +1,10 @@
-import Layout from '../../components/docsLayout'
+import { Text } from "@chakra-ui/react"
+import Layout from '../../components/layouts/docsLayout'
 
 export default function Docs() {
   return (
     <Layout>
-      <h1>Docs</h1>
+      <Text fontSize="6xl" color="pink.800">Docs</Text>
     </Layout>
   )
 }
