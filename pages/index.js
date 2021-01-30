@@ -1,25 +1,17 @@
-import Link from 'next/link'
-import Typist from 'react-typist';
-
-import NavBar from '../components/sections/navbar'
 import Layout from '../components/layouts/homeLayout'
+import NavBar from '../components/sections/navbar'
+import Header from '../components/sections/header'
+import GettingStarted from '../components/sections/gettingStarted'
+import Footer from '../components/sections/footer'
 
 
 export default function Home() {
   return (
     <Layout>
       <NavBar />
-      <Typist cursor={{show: false}}>
-        <h1>
-          Your Life
-          <Typist.Backspace count={4} delay={800} />
-          Autobiography
-          <Typist.Backspace count={13} delay={800} />
-          Code
-          <Typist.Backspace count={9} delay={800} />
-          urcode
-        </h1>
-      </Typist>
+      <Header />
+      <GettingStarted />
+      <Footer />
     </Layout>
   )
 }

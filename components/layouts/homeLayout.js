@@ -8,7 +8,7 @@ export default function homeLayout({ children }) {
       <Head>
         <title>urcode</title>
       </Head>
-      <div>
+      <div className={styles.content}>
         {children}
       </div>
     </div>

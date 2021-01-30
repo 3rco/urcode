@@ -1,0 +1,11 @@
+.header {
+  margin-left: 20px;
+}
+
+.typing {
+  font-size: 72px;
+}
+
+.typing > span {
+  color: #1A365D;
+}
