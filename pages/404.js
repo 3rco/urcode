@@ -1,15 +1,14 @@
 import Link from 'next/link'
-import { Text } from "@chakra-ui/react"
 
 
 export default function NotFound() {
   return (
      <div>
-      <Text fontSize="6xl" color="pink.800">Oh no! Page not found.</Text>
+      <h1 >Oh no! Page not found.</h1>
 
       <Link href="/">
         <a>
-            <Text fontSize="lg" color="pink.500">Home</Text>
+            <h2>Home</h2>
         </a>
       </Link>
      </div>
