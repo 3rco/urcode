@@ -1,5 +1,6 @@
-import styles from './homeLayout.module.css'
 import Head from 'next/head'
+
+import styles from './homeLayout.module.css'
 
 export default function homeLayout({ children }) {
   return (
@@ -7,8 +8,9 @@ export default function homeLayout({ children }) {
       <Head>
         <title>urcode</title>
       </Head>
-      <div className={styles.container}>{children}</div>
+      <div className={styles.content}>
+        {children}
+      </div>
     </div>
-
   )
 }
