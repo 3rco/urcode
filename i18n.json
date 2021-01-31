@@ -1,0 +1,11 @@
+{
+  "locales": [
+    "en-US",
+    "tr"
+  ],
+  "defaultLocale": "en-US",
+  "pages": {
+    "*": ["landing"],
+    "/docs": ["docs"]
+  }
+}
