@@ -19,11 +19,9 @@ export default function NavBar() {
           width={128}
           height={128}
         />
-      </Link>
+      </Link> 
       <h1 className={styles.nav_item}>
-        <Link href="/users">
-          <a>Links</a> 
-        </Link>
+        <i class="fas fa-language"></i> en
       </h1>
     </section>
   )

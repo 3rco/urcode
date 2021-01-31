@@ -25,7 +25,7 @@
   place-self: flex-end;
   border: 1px solid #000000;
   border-radius: 5px;
-  color: #000000;
+  color: #ffffff;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -35,5 +35,9 @@
 }
 
 .nav_item:hover > a {
+  color: #ffffff;
+}
+
+.nav_item:hover > h1 {
   color: #ffffff;
 }
