@@ -1,40 +1,33 @@
-import Link from 'next/link'
+import useTranslation from 'next-translate/useTranslation'
 
 import styles from '../sections/gettingStarted.module.css'
 
 export default function gettingStarted() {
+  let { t } = useTranslation() 
+
   return (
-    <section >
-        <h2 className={styles.h2}>Getting Started</h2>
+    <section>
+        <h2 className={styles.h2}>{t("landing:Getting Started")}</h2>
 
-        <h3 className={styles.h3}>Our Goal</h3>
+        <h3 className={styles.h3}>{t("landing:Our Goal")}</h3>
         <p className={styles.p}>
-          Our goal is to obtain a piece of code that briefly introduce the author.
-          We have a generator and parser for this.
-          In addition, we want the generated codes to be published on a page.
+          {t("landing:Our Goal Content")}
         </p>
 
-        <h3 className={styles.h3}>What is urcode?</h3>
+        <h3 className={styles.h3}>{t("landing:What is urcode?")}</h3>
         <p className={styles.p}>
-            The urcode consists of several categories. 
-            Each category is labeled with a letter and some qualifiers.
-            Go through each category and determine which set of qualifiers best describes you in that category.
-            By selecting the right qualifiers and submitting this form, you are able to construct your overall urcode.
+          {t("landing:What is urcode? p1")}
         </p>
         <p className={styles.p}>
-            Some of the qualifiers will very probably not match with you exactly.
-            It is impossible to cover all possibilities in each category. 
-            Simply choose that qualifier that most closely matches you. 
-            Each description of each qualifier describes the wide range of activities that apply, so as long as you match with one, you can probably use that qualifier.
+          {t("landing:What is urcode? p2")}
         </p>
         <p className={styles.inspiration}>
-            Our inspiration is <a href="https://www.geekcode.xyz/" target="_blank">geek code</a>.
+          {t("landing:inspiration")}<a href="https://www.geekcode.xyz/" target="_blank">geek code</a>
         </p>
 
-        <h3 className={styles.h3}>So how to get started?</h3>
+        <h3 className={styles.h3}>{t("landing:how to get started?")}</h3>
         <p className={styles.p}>
-          You can get started quickly by reviewing the <Link href="/docs"><a>document</a></Link> section. 
-          Also, in the document section, you can find information about how you can reach us or how you can contribute.
+          {t("landing:how to get started? p1")}
         </p>
     </section>
   )

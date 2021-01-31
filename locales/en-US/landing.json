@@ -1,0 +1,13 @@
+{
+  "Getting Started": "Getting Started",
+  "Our Goal": "Our Goal",
+  "Our Goal Content": "Our goal is to obtain a piece of code that briefly introduce the author. We have a generator and parser for this. In addition, we want the generated codes to be published on a page.",
+  "What is urcode?": "What is urcode?",
+  "What is urcode? p1": "The urcode consists of several categories. Each category is labeled with a letter and some qualifiers. Go through each category and determine which set of qualifiers best describes you in that category. By selecting the right qualifiers and submitting this form, you are able to construct your overall urcode.",
+  "What is urcode? p2": "Some of the qualifiers will very probably not match with you exactly. It is impossible to cover all possibilities in each category. Simply choose that qualifier that most closely matches you. Each description of each qualifier describes the wide range of activities that apply, so as long as you match with one, you can probably use that qualifier.",
+  "inspiration": "Our inspiration is ",
+  "how to get started?": "So how to get started?",
+  "how to get started? p1": "You can get started quickly by reviewing the documents section. Also, in the document section, you can find information about how you can reach us or how you can contribute.",
+  "Docs": "Docs",
+  "Your Life": "Your Life"
+}

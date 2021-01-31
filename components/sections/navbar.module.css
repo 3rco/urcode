@@ -25,7 +25,7 @@
   place-self: flex-end;
   border: 1px solid #000000;
   border-radius: 5px;
-  color: #000000;
+  color: #ffffff;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -36,4 +36,60 @@
 
 .nav_item:hover > a {
   color: #ffffff;
+}
+
+.nav_item:hover > h1 {
+  color: #ffffff;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropbtn {
+  background-color: white;
+  border: 1px solid black !important;
+  border-radius: 5px;
+  text-align: center;
+  color: black;
+  padding: 5px;
+  font-size: 24px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding: 5px;
+  place-self: flex-end;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdownContent a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdownContent a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdownContent {display: block;}
+
+.dropdown:hover .dropbtn {
+  background-color: black;
+  color: white;
 }
