@@ -1,0 +1,33 @@
+.info {
+  text-align: center;
+}
+
+.info > h1 {
+  font-size: 36px;
+}
+
+.info > p {
+  font-size: 18px;
+  font-style: italic;
+  text-align: right;
+}
+
+.content {
+  text-decoration: none;
+}
+
+.content > h1 {
+  font-size: 36px;
+}
+
+.content > h2 {
+  font-size: 28px;
+}
+
+.content > h3 {
+  font-size: 24px;
+}
+
+.content > p {
+  font-size: 18px;
+}
