@@ -11,14 +11,15 @@ export default function NavBar() {
           <a>Docs</a> 
         </Link>
       </h1>
-      <Image
-        className={{placeSelf: "flex-end"}}
-        src="/img/monochrome-black.svg"
-        alt="Picture of the author"
-        width={128}
-        height={128}
-      />
-      
+      <Link href="/">
+        <Image
+          className={{placeSelf: "flex-end"}}
+          src="/img/monochrome-black.svg"
+          alt="Picture of the author"
+          width={128}
+          height={128}
+        />
+      </Link>
       <h1 className={styles.nav_item}>
         <Link href="/users">
           <a>Links</a> 

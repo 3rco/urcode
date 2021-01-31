@@ -1,7 +1,7 @@
 import Layout from '../components/layouts/docsLayout'
 import NavBar from '../components/sections/navbar'
+import Footer from '../components/sections/footer'
 import { getPostData } from '../lib/docs'
-
 import styles from './docs.module.css'
 
 export async function getStaticProps() {
@@ -31,6 +31,7 @@ export default function Docs({ postData }) {
       
       <div className={styles.content} dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
 
+      <Footer />
     </Layout>
   )
 }
