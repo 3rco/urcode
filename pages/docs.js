@@ -7,8 +7,8 @@ import { getPostData } from '../lib/docs'
 import styles from './docs.module.css'
 
 
-export async function getStaticProps() {
-  const postData = await getPostData()
+export async function getStaticProps(params) {
+  const postData = await getPostData(params.locale)
 
   return {
     props: {
