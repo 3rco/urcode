@@ -8,6 +8,7 @@
 
 .footer > a {
   text-decoration: none;
+  place-self: center;
 }
 
 .footer > a > img {

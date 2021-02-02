@@ -18,7 +18,9 @@ export default function Footer() {
           height={31}
         />
       </a> 
-      <h1>Donation</h1>
+      <a href="mailto:hi@urcode.link">
+        <i class="fas fa-envelope"></i> hi[at]urcode[dot]link
+      </a>
     </section>
   )
 }
