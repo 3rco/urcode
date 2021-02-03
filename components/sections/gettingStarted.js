@@ -1,5 +1,4 @@
 import useTranslation from 'next-translate/useTranslation'
-import "nes.css/css/nes.min.css";
 import styles from '../sections/gettingStarted.module.css'
 
 export default function gettingStarted() {
