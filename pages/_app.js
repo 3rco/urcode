@@ -7,7 +7,8 @@ function MyApp({ Component, pageProps }) {
   return (
     <div>
       <Head>
-        <link href="/fontawesome-free-5.15.2-web/css/all.css" rel="stylesheet" />
+        <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+        <link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css' />
       </Head>
 
       <Component {...pageProps} />

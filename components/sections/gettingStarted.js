@@ -1,13 +1,14 @@
 import useTranslation from 'next-translate/useTranslation'
-
+import "nes.css/css/nes.min.css";
 import styles from '../sections/gettingStarted.module.css'
 
 export default function gettingStarted() {
   let { t } = useTranslation() 
 
   return (
-    <section>
-        <h2 className={styles.h2}>{t("landing:Getting Started")}</h2>
+
+    <div className={"nes-container is-dark with-title"} style={{margin:50}}>
+        <p className={"title"}>{t("landing:Getting Started")}</p>
 
         <h3 className={styles.h3}>{t("landing:Our Goal")}</h3>
         <p className={styles.p}>
@@ -29,6 +30,6 @@ export default function gettingStarted() {
         <p className={styles.p}>
           {t("landing:how to get started? p1")}
         </p>
-    </section>
+    </div>
   )
 }
