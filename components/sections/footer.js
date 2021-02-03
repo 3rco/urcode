@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <section className={styles.footer}>
       <a href="https://github.com/3rco/urcode" target="_blank" style={{marginTop:10}}>
-       <i className={"nes-icon github is-large"} ></i>
+       <i className={"nes-icon github is-medium"} ></i>
       </a>
       <a style={{placeSelf: "center"}} href="http://www.wtfpl.net/txt/copying/" target="_blank">
         <Image
@@ -19,7 +19,7 @@ export default function Footer() {
         />
       </a> 
       <a href="mailto:hi@urcode.link" style={{marginTop:15}}>
-      <i className={"nes-icon gmail is-large"}></i>
+      <i className={"nes-icon gmail is-medium"}></i>
       </a>
     </section>
   )
