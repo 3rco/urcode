@@ -1,9 +1,11 @@
 .header {
   margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: -30px;
 }
 
 .typing {
-  font-size: 72px;
+  font-size: 42px;
 }
 
 .typing > span {

@@ -1,17 +1,20 @@
 .inspiration {
     text-align: right;
     font-style: italic;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .h2 {
-    font-size: 36px;
+    font-size: 30px;
+    line-height: 30px !important;
 }
 
 .h3 {
     font-size: 24px;
+    line-height: 30px !important;
 }
 
 .p {
-    font-size: 18px;
+    font-size: 15px;
+    line-height: 30px !important;
 }

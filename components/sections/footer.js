@@ -7,8 +7,8 @@ import styles from '../sections/footer.module.css'
 export default function Footer() {
   return (
     <section className={styles.footer}>
-      <a href="https://github.com/3rco/urcode" target="_blank">
-        <h1><i className="fab fa-github"></i> GitHub</h1>
+      <a href="https://github.com/3rco/urcode" target="_blank" style={{marginTop:10}}>
+       <i className={"nes-icon github is-large"} ></i>
       </a>
       <a style={{placeSelf: "center"}} href="http://www.wtfpl.net/txt/copying/" target="_blank">
         <Image
@@ -18,8 +18,8 @@ export default function Footer() {
           height={31}
         />
       </a> 
-      <a href="mailto:hi@urcode.link">
-        <i class="fas fa-envelope"></i> hi[at]urcode[dot]link
+      <a href="mailto:hi@urcode.link" style={{marginTop:15}}>
+      <i className={"nes-icon gmail is-large"}></i>
       </a>
     </section>
   )

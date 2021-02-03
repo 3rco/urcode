@@ -18,17 +18,13 @@ export default function NavBar() {
         </Link>
       </h1>
       <Link href="/">
-        <Image
-          className={{placeSelf: "flex-end"}}
-          src="/img/monochrome-black.svg"
-          alt="Picture of the author"
-          width={128}
-          height={128}
-        />
+      <i className={"nes-icon is-large heart"}></i>
+          
+       
       </Link>
       <div className={styles.dropdown}>
         <h1 className={styles.dropbtn}>
-          <i class="fas fa-language"></i> {router.locale}
+          <i className={"fas fa-language"}></i> {router.locale}
         </h1>
         <div className={styles.dropdownContent}>
           {router.locales.map((l) => (
