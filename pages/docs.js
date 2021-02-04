@@ -25,7 +25,7 @@ export default function Docs({ postData }) {
       <NavBar />
       <section className={styles.info}>
         <h1>
-          <span style={{color: "#1A365D"}}>* </span> 
+          <span style={{color: "black"}}>* </span> 
           urcode
         </h1>
         <p>
