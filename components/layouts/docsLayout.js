@@ -8,7 +8,7 @@ export default function docsLayout({ children }) {
       <Head>
         <title>Documentation</title>
       </Head>
-      <div className={styles.container}>
+      <div className={styles.content}>
         {children}
       </div>
     </div>
