@@ -14,11 +14,13 @@
   display: inline-block;
   cursor: pointer;
   padding: 5px;
+  background-color: black;  
+  margin-bottom: 13px;
 }
 
 .nav_item > a {
   text-decoration: none;
-  color: #000000;
+  color: gray;
 }
 
 .nav_item:hover {
@@ -56,17 +58,18 @@
   border: 1px solid black !important;
   border-radius: 5px;
   text-align: center;
-  color: black;
+  color: gray;
   padding: 5px;
   font-size: 24px;
   border: none;
+  background-color: black;  
 }
 
 .dropdown {
   position: relative;
   display: inline-block;
   padding: 5px;
-  place-self: flex-end;
+  place-self: flex-end; 
 }
 
 .dropdownContent {

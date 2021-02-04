@@ -1,5 +1,6 @@
 import useTranslation from 'next-translate/useTranslation'
 import styles from '../sections/gettingStarted.module.css'
+import Link from 'next/link'
 
 export default function gettingStarted() {
   let { t } = useTranslation() 
@@ -29,6 +30,7 @@ export default function gettingStarted() {
         <p className={styles.p}>
           {t("landing:how to get started? p1")}
         </p>
+        <Link href="/docs"><a className={"nes-btn"}>{t("landing:Start")}</a></Link>
     </div>
   )
 }
