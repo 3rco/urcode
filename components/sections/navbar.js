@@ -17,11 +17,15 @@ export default function NavBar() {
           <a>{t("landing:Docs")}</a> 
         </Link>
       </h1>
-      <Link href="/">
-      <i className={"nes-icon is-large heart"}></i>
-          
-       
-      </Link>
+      <Link style={{placeSelf: "center"}} href="/">
+        <Image
+          src="/img/logo.gif"
+          alt="urcode"
+          width={64}
+          height={64}
+          style          
+        />
+      </Link> 
       <div className={styles.dropdown}>
         <h1 className={styles.dropbtn}>
           <i className={"fas fa-language"}></i> {router.locale}

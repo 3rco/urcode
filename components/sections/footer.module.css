@@ -3,14 +3,16 @@
   flex-direction: row;
   justify-content: space-around;
   border-top: 5px solid black;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .footer > a {
   text-decoration: none;
   place-self: center;
+  margin-top: 15px;
 }
 
 .footer > a > img {
   place-self: center;
+  margin-top: 50px !important;
 }
