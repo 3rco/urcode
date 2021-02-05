@@ -14,13 +14,13 @@
   display: inline-block;
   cursor: pointer;
   padding: 5px;
-  background-color: black;  
+  background-color: #ffffff;  
   margin-bottom: 13px;
 }
 
 .nav_item > a {
   text-decoration: none;
-  color: gray;
+  color: #000000;
 }
 
 .nav_item:hover {
@@ -58,11 +58,11 @@
   border: 1px solid black !important;
   border-radius: 5px;
   text-align: center;
-  color: gray;
+  color: black;
   padding: 5px;
   font-size: 24px;
   border: none;
-  background-color: black;  
+  background-color: white;  
 }
 
 .dropdown {

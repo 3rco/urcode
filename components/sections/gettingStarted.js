@@ -7,7 +7,7 @@ export default function gettingStarted() {
 
   return (
 
-    <div className={"nes-container is-dark with-title"} style={{margin:50}}>
+    <div className={"nes-container with-title is-centered"} style={{margin:50}}>
         <p className={"title"}>{t("landing:Getting Started")}</p>
 
         <h3 className={styles.h3}>{t("landing:Our Goal")}</h3>
