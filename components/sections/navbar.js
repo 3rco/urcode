@@ -2,16 +2,19 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import Image from 'next/image'
 import useTranslation from 'next-translate/useTranslation'
-
-
 import styles from '../sections/navbar.module.css'
+
+
+import useDarkMode from 'use-dark-mode';
 
 export default function NavBar() {
   let { t } = useTranslation() 
   let router = useRouter()
+  const darkMode = useDarkMode(false);
 
   return (
     <section className={styles.nav}>
+      
       <h1 className={styles.nav_item}>
         <Link href="/docs">
           <a>{t("landing:Docs")}</a> 
@@ -38,7 +41,12 @@ export default function NavBar() {
           ))}
         </div>
       </div>
+      <div style={{position:'absolute', right:10}}>
+  <button type="button" class="nes-btn is-primary" onClick={darkMode.disable}>*</button>
       
+       <button type="button" class="nes-btn is-primary" onClick={darkMode.enable}>☾</button>
+      
+    </div>
     </section>
   )
 }

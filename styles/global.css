@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
  
- html, body {
+body.dark-mode {
   width: 1200px;
   margin: auto !important;
   flex-direction: column;
   font-family: 'Press Start 2P', cursive; 
+  background-color: gray;
 }
-
+body.light-mode {
+  width: 1200px;
+  margin: auto !important;
+  flex-direction: column;
+  font-family: 'Press Start 2P', cursive;
+}
 
 /*@media screen and (max-width: 1000px) {
   body {
