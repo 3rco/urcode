@@ -41,11 +41,23 @@ export default function NavBar() {
           ))}
         </div>
       </div>
-      <div style={{position:'absolute', right:10}}>
-  <button type="button" class="nes-btn is-primary" onClick={darkMode.disable}>*</button>
-      
-       <button type="button" class="nes-btn is-primary" onClick={darkMode.enable}>☾</button>
-      
+      <div style={{position:'absolute', right:30}}>
+      <a onClick={darkMode.enable}>
+                <Image
+                    src="/img/moon.png"
+                    alt="light"
+                    width={48}
+                    height={48}                    
+                />
+            </a> 
+      <a onClick={darkMode.disable}>
+                <Image
+                    src="/img/sun.png"
+                    alt="light"
+                    width={48}
+                    height={48}                    
+                />
+            </a>                 
     </div>
     </section>
   )
