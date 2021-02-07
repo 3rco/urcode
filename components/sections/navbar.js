@@ -2,13 +2,11 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import Image from 'next/image'
 import useTranslation from 'next-translate/useTranslation'
-import useDarkMode from 'use-dark-mode';
 import styles from '../sections/navbar.module.css'
 
 export default function NavBar() {
   let router = useRouter()
   let { t } = useTranslation()
-  const darkMode = useDarkMode(false);
 
   return (
     <section className={styles.nav}>
@@ -39,28 +37,6 @@ export default function NavBar() {
           ))}
         </div>
       </div>
-      <div style={{position:'absolute', right:30}}>
-        {
-          darkMode.value ?
-            <a className={styles.smButton} onClick={darkMode.disable}>
-              <Image
-                  src="/img/sun.png"
-                  alt="light"
-                  width={48}
-                  height={48}                    
-              />
-            </a>
-            : 
-            <a className={styles.smButton} onClick={darkMode.enable}>
-              <Image
-                  src="/img/moon.png"
-                  alt="light"
-                  width={48}
-                  height={48}                    
-              />
-            </a>
-        }
-    </div>
     </section>
   )
 }
