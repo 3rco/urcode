@@ -5,12 +5,13 @@ import useDarkMode from 'use-dark-mode';
 
 export default function gettingStarted() {
   let { t } = useTranslation() 
-  const darkMode = useDarkMode(false);
+  
+  const darkMode = useDarkMode(true);
   const dtheme = "nes-container is-dark with-title is-centered";
   const ltheme = "nes-container with-title is-centered";
   const theme = darkMode.value ? dtheme : ltheme;
+  
   return (
-
     <div className={theme} style={{margin:50}}>
        
         <p className={"title"}>{t("landing:Getting Started")}</p>
