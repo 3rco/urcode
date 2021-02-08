@@ -1,7 +1,7 @@
 import useTranslation from 'next-translate/useTranslation'
-import styles from '../sections/gettingStarted.module.css'
 import Link from 'next/link'
 import useDarkMode from 'use-dark-mode';
+import styles from '../sections/gettingStarted.module.css'
 
 export default function gettingStarted() {
   let { t } = useTranslation() 

@@ -1,41 +1,30 @@
-import { useRouter } from 'next/router'
-import useTranslation from 'next-translate/useTranslation'
 import Layout from '../components/layouts/docsLayout'
 import NavBar from '../components/sections/navbar'
 import Footer from '../components/sections/footer'
-import { getPostData } from '../lib/docs'
+import Appearance from '../components/sections/docs/appearance'
+import FieldOfInterest from '../components/sections/docs/fieldOfInterest'
+import Lifestyle from '../components/sections/docs/lifestyle'
+import Computer from '../components/sections/docs/computer'
+import Entertainment from '../components/sections/docs/entertainment'
+import Politics from '../components/sections/docs/politics'
+import Contribution from '../components/sections/docs/contribution'
 import styles from './docs.module.css'
 
 
-export async function getStaticProps(params) {
-  const postData = await getPostData(params.locale)
-
-  return {
-    props: {
-      postData
-    }
-  }
-}
-
-export default function Docs({ postData }) {
-  let { t } = useTranslation() 
+export default function Docs() {
 
   return (
     <Layout>
       <NavBar />
-      <section className={styles.info}>
-        <h1>
-          <span style={{color: "black"}}>* </span> 
-          urcode
-        </h1>
-        <p>
-          <span style={{fontWeight: 'bold', textDecoration: 'underline'}}>{t("docs:Last Update")}</span>
-          <span> </span>{postData.date}
-        </p>
-      </section>
-      
-      <div className={styles.content} dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-
+        <section className={styles.content}>
+          <Appearance />
+          <FieldOfInterest />
+          <Lifestyle />
+          <Computer />
+          <Politics />
+          <Entertainment />
+          <Contribution />
+        </section>
       <Footer />
     </Layout>
   )
