@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
         <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
         <link rel="icon" type="image/gif" href="/favicon.gif"/>
       </Head>
-
+      
       <Component {...pageProps} />
     </div>
   )
