@@ -6,6 +6,7 @@ export default function entertainment() {
   return (
     <section>
       <h1>{t("docs:Entertainment")}</h1>
+      <blockquote>{t("docs:Entertainment bq")}</blockquote>
       <h2>{t("docs:Cinema")}</h2>
       <h2>{t("docs:Theatre")}</h2>
       <h2>{t("docs:Movie")}</h2>

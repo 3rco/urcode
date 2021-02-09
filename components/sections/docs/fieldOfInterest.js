@@ -6,6 +6,7 @@ export default function fieldOfInterest() {
   return (
     <section>
       <h1>{t("docs:Field Of Interest")}</h1>
+      <blockquote>{t("docs:Field Of Interest bq")}</blockquote>
     </section>
   )
 }
