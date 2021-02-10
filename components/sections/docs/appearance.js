@@ -4,14 +4,22 @@ export default function Appearance() {
   let { t } = useTranslation() 
 
   return (
-    <section>
-        <h1>{t("docs:Appearance")}</h1>
+    <section className={"nes-container with-title"} style={{marginBottom: "20px"}}>
+        <p className={"title"}>{t("docs:Appearance")}</p>
         <blockquote>{t("docs:Appearance bq")}</blockquote>
-        <h2>{t("docs:Dress")}</h2>
-        <blockquote>{t("docs:Dress bq")}</blockquote>
-        <h2>{t("docs:Body")}</h2>
-        <h3>{t("docs:Length")}</h3>
-        <h3>{t("docs:Roundness")}</h3>
+        <section className={"nes-container with-title is-rounded"} style={{marginBottom: "20px"}}>
+          <p className={"title"}>{t("docs:Dress")}</p>
+          <blockquote>{t("docs:Dress bq")}</blockquote>
+        </section>
+        <section className={"nes-container with-title is-rounded"}>
+          <p className={"title"}>{t("docs:Body")}</p>
+          <section className={"nes-container with-title is-rounded"} style={{marginBottom: "20px"}}>
+            <p className={"title"}>{t("docs:Length")}</p>
+          </section>
+          <section className={"nes-container with-title is-rounded"} style={{marginBottom: "20px"}}>
+            <p className={"title"}>{t("docs:Roundness")}</p>
+          </section>
+        </section>
     </section>
   )
 }
