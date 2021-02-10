@@ -1,18 +1,13 @@
 import useTranslation from 'next-translate/useTranslation'
 import Link from 'next/link'
-import useDarkMode from 'use-dark-mode';
 import styles from '../sections/gettingStarted.module.css'
+import dmode from '../../utils/darkMode'
 
 export default function gettingStarted() {
-  let { t } = useTranslation() 
-  
-  const darkMode = useDarkMode(true);
-  const dtheme = "nes-container is-dark with-title is-centered";
-  const ltheme = "nes-container with-title is-centered";
-  const theme = darkMode.value ? dtheme : ltheme;
+  let { t } = useTranslation()
   
   return (
-    <div className={theme} style={{margin:50}}>
+    <div className={dmode()} style={{margin:50}}>
        
         <p className={"title"}>{t("landing:Getting Started")}</p>
 
