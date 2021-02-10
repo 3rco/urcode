@@ -17,17 +17,18 @@ export default function NavBar() {
         </Link>
       </h1>
       <Link style={{placeSelf: "center"}} href="/">
+        <a>
         <Image
-          src="/img/logo.gif"
+          src="/img/logo.png"
           alt="urcode"
           width={64}
-          height={64}
-          style          
+          height={64}    
         />
+        </a>
       </Link> 
       <div className={styles.dropdown}>
         <h1 className={styles.dropbtn}>
-          <i className={"fas fa-language"}></i> {router.locale}
+          {router.locale}
         </h1>
         <div className={styles.dropdownContent}>
           {router.locales.map((l) => (
