@@ -4,8 +4,8 @@ export default function fieldOfInterest() {
   let { t } = useTranslation()
 
   return (
-    <section>
-      <h1>{t("docs:Field Of Interest")}</h1>
+    <section className={"nes-container with-title"} style={{marginBottom: "20px"}}>
+      <p className={"title"}>{t("docs:Field Of Interest")}</p>
       <blockquote>{t("docs:Field Of Interest bq")}</blockquote>
     </section>
   )

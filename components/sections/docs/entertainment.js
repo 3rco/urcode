@@ -4,16 +4,30 @@ export default function entertainment() {
   let { t } = useTranslation()
 
   return (
-    <section>
-      <h1>{t("docs:Entertainment")}</h1>
+    <section className={"nes-container with-title"} style={{marginBottom: "20px"}}>
+      <p className={"title"}>{t("docs:Entertainment")}</p>
       <blockquote>{t("docs:Entertainment bq")}</blockquote>
-      <h2>{t("docs:Cinema")}</h2>
-      <h2>{t("docs:Theatre")}</h2>
-      <h2>{t("docs:Movie")}</h2>
-      <h2>{t("docs:Series")}</h2>
-      <h2>{t("docs:TV")}</h2>
-      <h2>{t("docs:Book")}</h2>
-      <h2>{t("docs:Game")}</h2>
+      <section className={"nes-container with-title is-rounded"} style={{marginBottom: "20px"}}>
+        <p className={"title"}>{t("docs:Cinema")}</p>
+      </section>
+      <section className={"nes-container with-title is-rounded"} style={{marginBottom: "20px"}}>
+        <p className={"title"}>{t("docs:Theatre")}</p>
+      </section>
+      <section className={"nes-container with-title is-rounded"} style={{marginBottom: "20px"}}>
+        <p className={"title"}>{t("docs:Movie")}</p>
+      </section>
+      <section className={"nes-container with-title is-rounded"} style={{marginBottom: "20px"}}>
+        <p className={"title"}>{t("docs:Series")}</p>
+      </section>
+      <section className={"nes-container with-title is-rounded"} style={{marginBottom: "20px"}}>
+        <p className={"title"}>{t("docs:TV")}</p>
+      </section>
+      <section className={"nes-container with-title is-rounded"} style={{marginBottom: "20px"}}>
+        <p className={"title"}>{t("docs:Book")}</p>
+      </section>
+      <section className={"nes-container with-title is-rounded"} style={{marginBottom: "20px"}}>
+        <p className={"title"}>{t("docs:Game")}</p>
+      </section>
     </section>
   )
 }

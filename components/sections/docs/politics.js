@@ -4,8 +4,8 @@ export default function politics() {
   let { t } = useTranslation()
   
   return (
-    <section>
-      <h1>{t("docs:Politics")}</h1>
+    <section className={"nes-container with-title"} style={{marginBottom: "20px"}}>
+      <p className={"title"}>{t("docs:Politics")}</p>
     </section>
   )
 }
