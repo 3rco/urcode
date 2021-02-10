@@ -27,8 +27,8 @@ export default function Header() {
             darkMode.value ?
               <a className={styles.smButton} onClick={darkMode.disable}>
                 <Image
-                    src="/img/sun.png"
-                    alt="light"
+                    src="/img/dark.png"
+                    alt="dark"
                     width={48}
                     height={48}                    
                 />
@@ -36,7 +36,7 @@ export default function Header() {
               : 
               <a className={styles.smButton} onClick={darkMode.enable}>
                 <Image
-                    src="/img/moon.png"
+                    src="/img/light.png"
                     alt="light"
                     width={48}
                     height={48}                    
@@ -65,8 +65,8 @@ export default function Header() {
             darkMode.value ?
               <a className={styles.smButton} onClick={darkMode.disable}>
                 <Image
-                    src="/img/sun.png"
-                    alt="light"
+                    src="/img/dark.png"
+                    alt="dark"
                     width={48}
                     height={48}                    
                 />
@@ -74,7 +74,7 @@ export default function Header() {
               : 
               <a className={styles.smButton} onClick={darkMode.enable}>
                 <Image
-                    src="/img/moon.png"
+                    src="/img/light.png"
                     alt="light"
                     width={48}
                     height={48}                    
