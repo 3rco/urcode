@@ -60,6 +60,28 @@ export default function Header() {
             urcode
           </h1>
         </Typist>
+        <section>
+          {
+            darkMode.value ?
+              <a className={styles.smButton} onClick={darkMode.disable}>
+                <Image
+                    src="/img/sun.png"
+                    alt="light"
+                    width={48}
+                    height={48}                    
+                />
+              </a>
+              : 
+              <a className={styles.smButton} onClick={darkMode.enable}>
+                <Image
+                    src="/img/moon.png"
+                    alt="light"
+                    width={48}
+                    height={48}                    
+                />
+              </a>
+          }
+        </section>
       </section>
     )
   }
