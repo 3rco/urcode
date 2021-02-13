@@ -9,25 +9,211 @@ export default function entertainment() {
       <p className={"title"}>{t("docs:Entertainment")}</p>
       <blockquote>{t("docs:Entertainment bq")}</blockquote>
       <section className={`${dmode()} is-rounded`} style={{marginBottom: "20px"}}>
-        <p className={"title"}>{t("docs:Cinema")}</p>
-      </section>
-      <section className={`${dmode()} is-rounded`} style={{marginBottom: "20px"}}>
-        <p className={"title"}>{t("docs:Theatre")}</p>
+        <p className={"title"}>{t("docs:Cinema")} {t("docs:Theatre")}</p>
+        <section style={{display: 'flex', flexDirection: 'column'}}>
+          <label>
+            <input type="radio" className="nes-radio" name="ct" />
+            <span>c2: {t("docs:c2")}</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" name="ct" />
+            <span>c+: {t("docs:c+")}</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" name="ct" />
+            <span>c: {t("docs:c")}</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" name="ct" />
+            <span>c-: {t("docs:c-")}</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" name="ct" />
+            <span>c-2: {t("docs:c-2")}</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" name="ct" />
+            <span>!c: {t("docs:!c")}</span>
+          </label>
+        </section>
       </section>
       <section className={`${dmode()} is-rounded`} style={{marginBottom: "20px"}}>
         <p className={"title"}>{t("docs:Movie")}</p>
+        <section style={{display: 'flex', flexDirection: 'column'}}>
+          <label>
+            <input type="radio" className="nes-radio" name="mv" />
+            <span>mv3: {t("docs:mv3")}</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" name="mv" />
+            <span>mv2: {t("docs:mv2")}</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" name="mv" />
+            <span>mv+: {t("docs:mv+")}</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" name="mv" />
+            <span>mv: {t("docs:mv")}</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" name="mv" />
+            <span>mv-: {t("docs:mv-")}</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" name="mv" />
+            <span>mv-2: {t("docs:mv-2")}</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" name="mv" />
+            <span>mv-3: {t("docs:mv-3")}</span>
+          </label>
+        </section>
       </section>
       <section className={`${dmode()} is-rounded`} style={{marginBottom: "20px"}}>
         <p className={"title"}>{t("docs:Series")}</p>
+        <section style={{display: 'flex', flexDirection: 'column'}}>
+          <label>
+            <input type="radio" className="nes-radio" name="tvs" />
+            <span>sr3: {t("docs:sr3")}</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" name="tvs" />
+            <span>sr2: {t("docs:sr2")}</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" name="tvs" />
+            <span>sr+: {t("docs:sr+")}</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" name="tvs" />
+            <span>sr: {t("docs:sr")}</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" name="tvs" />
+            <span>sr-: {t("docs:sr-")}</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" name="tvs" />
+            <span>sr-2: {t("docs:sr-2")}</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" name="tvs" />
+            <span>sr-3: {t("docs:sr-3")}</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" name="tvs" />
+            <span>!sr: {t("docs:!s")}</span>
+          </label>
+        </section>
       </section>
       <section className={`${dmode()} is-rounded`} style={{marginBottom: "20px"}}>
         <p className={"title"}>{t("docs:TV")}</p>
+        <section style={{display: 'flex', flexDirection: 'column'}}>
+          <label>
+            <input type="radio" className="nes-radio" name="tv" />
+            <span>tv2: {t("docs:tv2")}</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" name="tv" />
+            <span>tv+: {t("docs:tv+")}</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" name="tv" />
+            <span>tv: {t("docs:tv")}</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" name="tv" />
+            <span>tv-: {t("docs:tv-")}</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" name="tv" />
+            <span>tv-2: {t("docs:tv-2")}</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" name="vt" />
+            <span>!tv: {t("docs:!tv")}</span>
+          </label>
+        </section>
       </section>
       <section className={`${dmode()} is-rounded`} style={{marginBottom: "20px"}}>
         <p className={"title"}>{t("docs:Book")}</p>
+        <section style={{display: 'flex', flexDirection: 'column'}}>
+          <label>
+            <input type="radio" className="nes-radio" name="book" />
+            <span>b2: {t("docs:b2")}</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" name="book" />
+            <span>b+: {t("docs:b+")}</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" name="book" />
+            <span>b: {t("docs:b")}</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" name="book" />
+            <span>b-: {t("docs:b-")}</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" name="book" />
+            <span>b-2: {t("docs:b-2")}</span>
+          </label>
+        </section>
       </section>
       <section className={`${dmode()} is-rounded`} style={{marginBottom: "20px"}}>
         <p className={"title"}>{t("docs:Game")}</p>
+        <section style={{display: 'flex', flexDirection: 'column'}}>
+          <label>
+            <input type="radio" className="nes-radio" name="game" />
+            <span>g2: {t("docs:g2")}</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" name="game" />
+            <span>g+: {t("docs:g+")}</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" name="game" />
+            <span>g: {t("docs:g")}</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" name="game" />
+            <span>g-: {t("docs:g-")}</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" name="game" />
+            <span>g-2: {t("docs:g-2")}</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" name="game" />
+            <span>!g: {t("docs:!g")}</span>
+          </label>
+        </section>
+      </section>
+      <section className={`${dmode()} is-rounded`} style={{marginBottom: "20px"}}>
+        <p className={"title"}>{t("docs:Music")}</p>
+        <section style={{display: 'flex', flexDirection: 'column'}}>
+          <label>
+            <input type="radio" className="nes-radio" name="music" />
+            <span>mu2: {t("docs:mu2")}</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" name="music" />
+            <span>mu+: {t("docs:mu+")}</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" name="music" />
+            <span>mu: {t("docs:mu")}</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" name="music" />
+            <span>mu-: {t("docs:mu-")}</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" name="music" />
+            <span>mu-2: {t("docs:mu-2")}</span>
+          </label>
+        </section>
       </section>
     </section>
   )
