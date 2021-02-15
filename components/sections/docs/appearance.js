@@ -77,7 +77,7 @@ export default function Appearance({ onRadioChanged }) {
               <label>
                 <input type="radio" className="nes-radio" 
                   value="l-" name="len" onChange={(e) => onRadioChanged(e)}/>
-                <span>j-: {t("docs:l-")}</span>
+                <span>l-: {t("docs:l-")}</span>
               </label>
               <label>
                 <input type="radio" className="nes-radio" 
