@@ -12,32 +12,32 @@ export default function lifestyle({ onRadioChanged }) {
         <section style={{display: 'flex', flexDirection: 'column'}}>
           <label>
             <input type="radio" className="nes-radio" 
-              name="edu" value="e2" onChange={(e) => onRadioChanged(e)}/>
+              name="edu" value="e2 " onChange={(e) => onRadioChanged(e)}/>
             <span>e2: {t("docs:e2")}</span>
           </label>
           <label>
             <input type="radio" className="nes-radio" 
-              name="edu" value="e+" onChange={(e) => onRadioChanged(e)}/>
+              name="edu" value="e+ " onChange={(e) => onRadioChanged(e)}/>
             <span>e+: {t("docs:e+")}</span>
           </label>
           <label>
             <input type="radio" className="nes-radio" 
-              name="edu" value="e" onChange={(e) => onRadioChanged(e)}/>
+              name="edu" value="e " onChange={(e) => onRadioChanged(e)}/>
             <span>e: {t("docs:e")}</span>
           </label>
           <label>
             <input type="radio" className="nes-radio" 
-              name="edu" value="e-" onChange={(e) => onRadioChanged(e)}/>
+              name="edu" value="e- " onChange={(e) => onRadioChanged(e)}/>
             <span>e-: {t("docs:e-")}</span>
           </label>
           <label>
             <input type="radio" className="nes-radio" 
-              name="edu" value="e-2" onChange={(e) => onRadioChanged(e)}/>
+              name="edu" value="e-2 " onChange={(e) => onRadioChanged(e)}/>
             <span>e-2: {t("docs:e-2")}</span>
           </label>
           <label>
             <input type="radio" className="nes-radio" 
-              name="edu" value="!e" onChange={(e) => onRadioChanged(e)}/>
+              name="edu" value="!e " onChange={(e) => onRadioChanged(e)}/>
             <span>!e: {t("docs:!e")}</span>
           </label>
           <label>
@@ -52,27 +52,27 @@ export default function lifestyle({ onRadioChanged }) {
         <section style={{display: 'flex', flexDirection: 'column'}}>
           <label>
             <input type="radio" className="nes-radio" 
-              name="house" value="h2" onChange={(e) => onRadioChanged(e)}/>
+              name="house" value="h2 " onChange={(e) => onRadioChanged(e)}/>
             <span>h2: {t("docs:h2")}</span>
           </label>
           <label>
             <input type="radio" className="nes-radio" 
-              name="house" value="h+" onChange={(e) => onRadioChanged(e)} />
+              name="house" value="h+ " onChange={(e) => onRadioChanged(e)} />
             <span>h+: {t("docs:h+")}</span>
           </label>
           <label>
             <input type="radio" className="nes-radio" name="house" 
-              value="h" onChange={(e) => onRadioChanged(e)} />
+              value="h " onChange={(e) => onRadioChanged(e)} />
             <span>h: {t("docs:h")}</span>
           </label>
           <label>
             <input type="radio" className="nes-radio" 
-              name="house" value="h-" onChange={(e) => onRadioChanged(e)} />
+              name="house" value="h- " onChange={(e) => onRadioChanged(e)} />
             <span>h-: {t("docs:h-")}</span>
           </label>
           <label>
             <input type="radio" className="nes-radio" 
-              name="house" value="h-2" onChange={(e) => onRadioChanged(e)} />
+              name="house" value="h-2 " onChange={(e) => onRadioChanged(e)} />
             <span>h-2: {t("docs:h-2")}</span>
           </label>
           <label>
@@ -88,27 +88,27 @@ export default function lifestyle({ onRadioChanged }) {
         <section style={{display: 'flex', flexDirection: 'column'}}>
           <label>
             <input type="radio" className="nes-radio" 
-              name="rela" value="r2" onChange={(e) => onRadioChanged(e)}/>
+              name="rela" value="r2 " onChange={(e) => onRadioChanged(e)}/>
             <span>r2: {t("docs:r2")}</span>
           </label>
           <label>
             <input type="radio" className="nes-radio" 
-              name="rela" value="r+" onChange={(e) => onRadioChanged(e)}/>
+              name="rela" value="r+ " onChange={(e) => onRadioChanged(e)}/>
             <span>r+: {t("docs:r+")}</span>
           </label>
           <label>
             <input type="radio" className="nes-radio" 
-              name="rela" value="r" onChange={(e) => onRadioChanged(e)}/>
+              name="rela" value="r " onChange={(e) => onRadioChanged(e)}/>
             <span>r: {t("docs:r")}</span>
           </label>
           <label>
             <input type="radio" className="nes-radio" 
-              name="rela" value="r-" onChange={(e) => onRadioChanged(e)}/>
+              name="rela" value="r- " onChange={(e) => onRadioChanged(e)}/>
             <span>r-: {t("docs:r-")}</span>
           </label>
           <label>
             <input type="radio" className="nes-radio" 
-              name="rela" value="r-2" onChange={(e) => onRadioChanged(e)}/>
+              name="rela" value="r-2 " onChange={(e) => onRadioChanged(e)}/>
             <span>r-2: {t("docs:r-2")}</span>
           </label>
           <label>
@@ -123,27 +123,27 @@ export default function lifestyle({ onRadioChanged }) {
         <section style={{display: 'flex', flexDirection: 'column'}}>
           <label>
             <input type="radio" className="nes-radio" 
-              name="job" value="j2" onChange={(e) => onRadioChanged(e)} />
+              name="job" value="j2 " onChange={(e) => onRadioChanged(e)} />
             <span>j2: {t("docs:j2")}</span>
           </label>
           <label>
             <input type="radio" className="nes-radio" 
-              name="job" value="j+" onChange={(e) => onRadioChanged(e)}/>
+              name="job" value="j+ " onChange={(e) => onRadioChanged(e)}/>
             <span>j+: {t("docs:j+")}</span>
           </label>
           <label>
             <input type="radio" className="nes-radio" 
-              name="job" value="j" onChange={(e) => onRadioChanged(e)}/>
+              name="job" value="j " onChange={(e) => onRadioChanged(e)}/>
             <span>j: {t("docs:j")}</span>
           </label>
           <label>
             <input type="radio" className="nes-radio" 
-              name="job" value="j-" onChange={(e) => onRadioChanged(e)}/>
+              name="job" value="j- " onChange={(e) => onRadioChanged(e)}/>
             <span>j-: {t("docs:j-")}</span>
           </label>
           <label>
             <input type="radio" className="nes-radio" 
-              name="job" value="j-2" onChange={(e) => onRadioChanged(e)}/>
+              name="job" value="j-2 " onChange={(e) => onRadioChanged(e)}/>
             <span>j-2: {t("docs:j-2")}</span>
           </label>
           <label>

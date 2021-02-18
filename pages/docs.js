@@ -17,14 +17,16 @@ import InfoSection  from '../components/sections/docs/infoSection'
 export default class Docs extends React.Component {
 
   state = {
-    codeBox: false
+    codeBox: false,
   }
 
   generateUrcode = () => {
+    let urcode = Object.values(this.state).filter(key => typeof(key)==="string")
     this.setState({
-      urcode: Object.values(this.state).join(' ').slice(5),
-      codeBox: true 
+      urcode: urcode,
+      codeBox: true
     })
+    console.log('urc:', urcode)
   }
   
   onRadioChanged = (e) => {
