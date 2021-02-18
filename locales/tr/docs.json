@@ -1,5 +1,6 @@
 {
   "Last Update": "Son Güncelleme:",
+  "Info":"Aşağıdaki kategorilerden sana en uygun şıkkı seçip oluştur butonuna basmalısın",
   "Interest": "Ne ile ilgileniyorsun?",
   "uA": "Reklamcılık",
   "uCS": "Bilgisayar Bilimleri",
@@ -200,8 +201,13 @@
   "mu-": "İsmini dahi bilmediğim müzik türleri var ",
   "mu-2": "2012’den beri aynı 10 şarkıyı dinliyorum",
   "/mu":"Cevap vermek istemiyorum",
+  "Generate":"Oluştur",
   "Contribution": "Katkı",
   "Code": "Kod",
+  "CCode":"Yukarıdaki bağlantı üzerinden örneğe bakarak kendi ürettiğiniz urcodu yayınlanmasını istediğiniz kullanıcı adı ile birlikte mevcut koda ekleyip katkı yapabilirsiniz. En kısa zamanda dönüş yapıyoruz.",
+  "CCode2":"Çeviri, hata ayıklama, geliştirme gibi tüm katkılarınızı yine repo üzerinden yapabilirsiniz.",
   "Donate": "Bağış",
-  "Share": "Paylaş"
+  "CDonate": "",
+  "Share": "Paylaş",
+  "CShare": ""
 }

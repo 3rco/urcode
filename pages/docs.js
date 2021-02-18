@@ -11,7 +11,8 @@ import Entertainment from '../components/sections/docs/entertainment'
 import Politics from '../components/sections/docs/politics'
 import Contribution from '../components/sections/docs/contribution'
 import styles from './docs.module.css'
-
+import GenerateSection from '../components/sections/docs/generateSection'
+import InfoSection  from '../components/sections/docs/infoSection'
 
 export default class Docs extends React.Component {
 
@@ -36,7 +37,8 @@ export default class Docs extends React.Component {
     return (
       <Layout>
         <NavBar />
-        <section className={styles.content}>
+        <section className={styles.content}>      
+          <InfoSection/>    
           <Interest onRadioChanged={this.onRadioChanged} />
           <Appearance onRadioChanged={this.onRadioChanged} />
           <FieldOfInterest onRadioChanged={this.onRadioChanged} />
@@ -44,21 +46,7 @@ export default class Docs extends React.Component {
           <Computer onRadioChanged={this.onRadioChanged} />
           <Politics onRadioChanged={this.onRadioChanged} />
           <Entertainment onRadioChanged={this.onRadioChanged} />
-          <section style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
-            <button type="button" className="nes-btn" 
-              style={{marginBottom: 20,  width: '25%', marginRight: 'auto', marginLeft: 'auto'}} onClick={() => this.generateUrcode()}>
-                Generate
-            </button>
-            {
-              this.state.codeBox ?
-                <p className="nes-balloon nes-pointer" style={{width: '75%', marginRight: 'auto', marginLeft: 'auto'}}>
-                  {this.state.urcode}
-                </p>
-                :
-                null
-            }
-          </section>
-          
+          <GenerateSection codeBox={this.state.codeBox} urcode={this.state.urcode} generateUrcode={this.generateUrcode}/>          
           <Contribution />
         </section>
         <Footer />

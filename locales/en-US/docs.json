@@ -1,5 +1,6 @@
 {
   "Last Update": "Last Update:",
+  "Info":"You should select the option that best suits you from the categories below and click the generate button.",
   "Interest": "What is your interests?",
   "uA": "Advertising",
   "uCS": "Computer Science",
@@ -200,8 +201,13 @@
   "g-2": "I played atari last",
   "!g": "I don't play games",
   "/g":"I do not want to answer",
+  "Generate":"Generate",
   "Contribution": "Contribution",
   "Code": "Code",
+  "CCode": "By looking at the example on the link above, you can add the urcode you have generated with the username you want to be published and contribute to the existing code. We will return as soon as possible.",
+  "CCode2": "You can make all your contributions such as translation, debugging and development through the repo.",
   "Donate": "Donate",
-  "Share": "Share"
+  "CDonate": "",
+  "Share": "Share",
+  "CShare": ""
 }
