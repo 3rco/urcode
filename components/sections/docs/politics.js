@@ -43,6 +43,11 @@ export default function politics({ onRadioChanged }) {
               name="po" value="@po" onChange={(e) => onRadioChanged(e)}/>
             <span>@po: {t("docs:@po")}</span>
           </label>
+          <label>
+            <input type="radio" className="nes-radio" 
+              name="po" value="" onChange={(e) => onRadioChanged(e)}/>
+            <span>{t("docs:/po")}</span>
+          </label>
       </section>
     </section>
   )

@@ -41,6 +41,11 @@ export default function entertainment({ onRadioChanged }) {
               name="ct" value="!c" onChange={(e) => onRadioChanged(e)}/>
             <span>!c: {t("docs:!c")}</span>
           </label>
+          <label>
+            <input type="radio" className="nes-radio" 
+              name="ct" value="" onChange={(e) => onRadioChanged(e)}/>
+            <span>{t("docs:/c")}</span>
+          </label>
         </section>
       </section>
       <section className={`${dmode()} is-rounded`} style={{marginBottom: "20px"}}>
@@ -80,6 +85,11 @@ export default function entertainment({ onRadioChanged }) {
             <input type="radio" className="nes-radio" 
               name="mv" value="mv-3" onChange={(e) => onRadioChanged(e)}/>
             <span>mv-3: {t("docs:mv-3")}</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" 
+              name="mv" value="" onChange={(e) => onRadioChanged(e)}/>
+            <span>{t("docs:/mv")}</span>
           </label>
         </section>
       </section>
@@ -126,6 +136,11 @@ export default function entertainment({ onRadioChanged }) {
               name="tvs" value="!sr" onChange={(e) => onRadioChanged(e)}/>
             <span>!sr: {t("docs:!s")}</span>
           </label>
+          <label>
+            <input type="radio" className="nes-radio" 
+              name="tvs" value="" onChange={(e) => onRadioChanged(e)}/>
+            <span>{t("docs:/s")}</span>
+          </label>
         </section>
       </section>
       <section className={`${dmode()} is-rounded`} style={{marginBottom: "20px"}}>
@@ -161,6 +176,11 @@ export default function entertainment({ onRadioChanged }) {
               name="tv" value="!tv" onChange={(e) => onRadioChanged(e)}/>
             <span>!tv: {t("docs:!tv")}</span>
           </label>
+          <label>
+            <input type="radio" className="nes-radio" 
+              name="tv" value="" onChange={(e) => onRadioChanged(e)}/>
+            <span>{t("docs:/tv")}</span>
+          </label>
         </section>
       </section>
       <section className={`${dmode()} is-rounded`} style={{marginBottom: "20px"}}>
@@ -190,6 +210,11 @@ export default function entertainment({ onRadioChanged }) {
             <input type="radio" className="nes-radio" 
               name="book" value="b-2" onChange={(e) => onRadioChanged(e)}/>
             <span>b-2: {t("docs:b-2")}</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" 
+              name="book" value="" onChange={(e) => onRadioChanged(e)}/>
+            <span>{t("docs:/b")}</span>
           </label>
         </section>
       </section>
@@ -226,6 +251,11 @@ export default function entertainment({ onRadioChanged }) {
               name="game" value="!g" onChange={(e) => onRadioChanged(e)}/>
             <span>!g: {t("docs:!g")}</span>
           </label>
+          <label>
+            <input type="radio" className="nes-radio" 
+              name="game" value="" onChange={(e) => onRadioChanged(e)}/>
+            <span>{t("docs:/g")}</span>
+          </label>
         </section>
       </section>
       <section className={`${dmode()} is-rounded`} style={{marginBottom: "20px"}}>
@@ -255,6 +285,11 @@ export default function entertainment({ onRadioChanged }) {
             <input type="radio" className="nes-radio" 
               name="music" value="mu-2" onChange={(e) => onRadioChanged(e)}/>
             <span>mu-2: {t("docs:mu-2")}</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" 
+              name="music" value="" onChange={(e) => onRadioChanged(e)}/>
+            <span>{t("docs:/mu")}</span>
           </label>
         </section>
       </section>

@@ -52,6 +52,16 @@ export default function Appearance({ onRadioChanged }) {
                 value="dx" name="dress" onChange={(e) => onRadioChanged(e)}/>
               <span>dx: {t("docs:dx")}</span>
             </label>
+            <label>
+              <input type="radio" className="nes-radio" 
+                value="!d" name="dress" onChange={(e) => onRadioChanged(e)}/>
+              <span>!d: {t("docs:!d")}</span>
+            </label>
+            <label>
+              <input type="radio" className="nes-radio" 
+                value="" name="dress" onChange={(e) => onRadioChanged(e)}/>
+              <span>{t("docs:/d")}</span>
+            </label>
           </section>
         </section>
         <section className={`${dmode()} is-rounded`}>
@@ -84,6 +94,11 @@ export default function Appearance({ onRadioChanged }) {
                   value="l-2" name="len" onChange={(e) => onRadioChanged(e)}/>
                 <span>l-2: {t("docs:l-2")}</span>
               </label>
+              <label>
+                <input type="radio" className="nes-radio" 
+                  value="" name="len" onChange={(e) => onRadioChanged(e)}/>
+                <span>{t("docs:/l")}</span>
+              </label>
             </section>
           </section>
           <section className={`${dmode()} is-rounded`} style={{marginBottom: "20px"}}>
@@ -113,6 +128,11 @@ export default function Appearance({ onRadioChanged }) {
                 <input type="radio" className="nes-radio" 
                   value="ro-2" name="rou" onChange={(e) => onRadioChanged(e)}/>
                 <span>ro-2: {t("docs:ro-2")}</span>
+              </label>
+              <label>
+                <input type="radio" className="nes-radio" 
+                  value="" name="rou" onChange={(e) => onRadioChanged(e)}/>
+                <span>{t("docs:/ro")}</span>
               </label>
             </section>
           </section>
@@ -173,6 +193,11 @@ export default function Appearance({ onRadioChanged }) {
             <input type="radio" className="nes-radio" 
               value="a-5" name="age" onChange={(e) => onRadioChanged(e)}/>
             <span>a-5: {'<'}10</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" 
+              value="" name="age" onChange={(e) => onRadioChanged(e)}/>
+            <span>{t("docs:/a")}</span>
           </label>
         </section>
     </section>

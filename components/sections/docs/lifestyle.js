@@ -40,6 +40,11 @@ export default function lifestyle({ onRadioChanged }) {
               name="edu" value="!e" onChange={(e) => onRadioChanged(e)}/>
             <span>!e: {t("docs:!e")}</span>
           </label>
+          <label>
+            <input type="radio" className="nes-radio" 
+              name="edu" value="" onChange={(e) => onRadioChanged(e)}/>
+            <span>{t("docs:/e")}</span>
+          </label>
         </section>
       </section>
       <section className={`${dmode()} is-rounded`} style={{marginBottom: "20px"}}>
@@ -69,6 +74,11 @@ export default function lifestyle({ onRadioChanged }) {
             <input type="radio" className="nes-radio" 
               name="house" value="h-2" onChange={(e) => onRadioChanged(e)} />
             <span>h-2: {t("docs:h-2")}</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" 
+              name="house" value="" onChange={(e) => onRadioChanged(e)} />
+            <span>{t("docs:/h")}</span>
           </label>
         </section>
       </section>
@@ -101,6 +111,11 @@ export default function lifestyle({ onRadioChanged }) {
               name="rela" value="r-2" onChange={(e) => onRadioChanged(e)}/>
             <span>r-2: {t("docs:r-2")}</span>
           </label>
+          <label>
+            <input type="radio" className="nes-radio" 
+              name="rela" value="" onChange={(e) => onRadioChanged(e)}/>
+            <span>{t("docs:/r")}</span>
+          </label>
         </section>
       </section>
       <section className={`${dmode()} is-rounded`} style={{marginBottom: "20px"}}>
@@ -130,6 +145,11 @@ export default function lifestyle({ onRadioChanged }) {
             <input type="radio" className="nes-radio" 
               name="job" value="j-2" onChange={(e) => onRadioChanged(e)}/>
             <span>j-2: {t("docs:j-2")}</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" 
+              name="job" value="" onChange={(e) => onRadioChanged(e)}/>
+            <span>{t("docs:/j")}</span>
           </label>
         </section>
       </section>

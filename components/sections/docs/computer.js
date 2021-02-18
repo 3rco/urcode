@@ -45,6 +45,11 @@ export default function computer({ onRadioChanged }) {
               name="web" value="i-3" onChange={(e) => onRadioChanged(e)}/>
             <span>i-3: {t("docs:i-3")}</span>
           </label>
+          <label>
+            <input type="radio" className="nes-radio" 
+              name="web" value="" onChange={(e) => onRadioChanged(e)}/>
+            <span>{t("docs:/i")}</span>
+          </label>
         </section>
       </section>
       <section className={`${dmode()} is-rounded`} style={{marginBottom: "20px"}}>
@@ -80,6 +85,11 @@ export default function computer({ onRadioChanged }) {
               name="sp" value="!s" onChange={(e) => onRadioChanged(e)}/>
             <span>!s: {t("docs:!s")}</span>
           </label>
+          <label>
+            <input type="radio" className="nes-radio" 
+              name="sp" value="" onChange={(e) => onRadioChanged(e)}/>
+            <span>{t("docs:/s")}</span>
+          </label>
         </section>
       </section>
       <section className={`${dmode()} is-rounded`} style={{marginBottom: "20px"}}>
@@ -114,6 +124,11 @@ export default function computer({ onRadioChanged }) {
             <input type="radio" className="nes-radio" 
               name="pro" value="?p" onChange={(e) => onRadioChanged(e)}/>
             <span>?p: {t("docs:?p")}</span>
+          </label>
+          <label>
+            <input type="radio" className="nes-radio" 
+              name="pro" value="" onChange={(e) => onRadioChanged(e)}/>
+            <span>{t("docs:/p")}</span>
           </label>
         </section>
       </section>

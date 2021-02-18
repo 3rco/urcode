@@ -74,6 +74,11 @@ export default function fieldOfInterest({ onRadioChanged }) {
             value="@f" name="foi" onChange={(e) => onRadioChanged(e)}/>
           <span>@f: {t("docs:@f")}</span>
         </label>
+        <label>
+          <input type="radio" className="nes-radio" 
+            value="" name="foi" onChange={(e) => onRadioChanged(e)}/>
+          <span>{t("docs:/f")}</span>
+        </label>
       </section>
     </section>
   )
