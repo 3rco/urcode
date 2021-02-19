@@ -1,14 +1,13 @@
 import useTranslation from 'next-translate/useTranslation'
-import dmode from '../../../utils/darkMode'
 
 export default function entertainment({ onRadioChanged }) {
   let { t } = useTranslation()
 
   return (
-    <section className={dmode()} style={{marginBottom: "20px"}}>
+    <section className={"nes-container with-title"} style={{marginBottom: "20px"}}>
       <p className={"title"}>{t("docs:Entertainment")}</p>
       <blockquote>{t("docs:Entertainment bq")}</blockquote>
-      <section className={`${dmode()} is-rounded`} style={{marginBottom: "20px"}}>
+      <section className={"nes-container with-title is-rounded"} style={{marginBottom: "20px"}}>
         <p className={"title"}>{t("docs:Cinema")} {t("docs:Theatre")}</p>
         <section style={{display: 'flex', flexDirection: 'column'}}>
           <label>
@@ -48,7 +47,7 @@ export default function entertainment({ onRadioChanged }) {
           </label>
         </section>
       </section>
-      <section className={`${dmode()} is-rounded`} style={{marginBottom: "20px"}}>
+      <section className={"nes-container with-title is-rounded"} style={{marginBottom: "20px"}}>
         <p className={"title"}>{t("docs:Movie")}</p>
         <section style={{display: 'flex', flexDirection: 'column'}}>
           <label>
@@ -93,7 +92,7 @@ export default function entertainment({ onRadioChanged }) {
           </label>
         </section>
       </section>
-      <section className={`${dmode()} is-rounded`} style={{marginBottom: "20px"}}>
+      <section className={"nes-container with-title is-rounded"} style={{marginBottom: "20px"}}>
         <p className={"title"}>{t("docs:Series")}</p>
         <section style={{display: 'flex', flexDirection: 'column'}}>
           <label>
@@ -143,7 +142,7 @@ export default function entertainment({ onRadioChanged }) {
           </label>
         </section>
       </section>
-      <section className={`${dmode()} is-rounded`} style={{marginBottom: "20px"}}>
+      <section className={"nes-container with-title is-rounded"} style={{marginBottom: "20px"}}>
         <p className={"title"}>{t("docs:TV")}</p>
         <section style={{display: 'flex', flexDirection: 'column'}}>
           <label>
@@ -183,7 +182,7 @@ export default function entertainment({ onRadioChanged }) {
           </label>
         </section>
       </section>
-      <section className={`${dmode()} is-rounded`} style={{marginBottom: "20px"}}>
+      <section className={"nes-container with-title is-rounded"} style={{marginBottom: "20px"}}>
         <p className={"title"}>{t("docs:Book")}</p>
         <section style={{display: 'flex', flexDirection: 'column'}}>
           <label>
@@ -218,7 +217,7 @@ export default function entertainment({ onRadioChanged }) {
           </label>
         </section>
       </section>
-      <section className={`${dmode()} is-rounded`} style={{marginBottom: "20px"}}>
+      <section className={"nes-container with-title is-rounded"} style={{marginBottom: "20px"}}>
         <p className={"title"}>{t("docs:Game")}</p>
         <section style={{display: 'flex', flexDirection: 'column'}}>
           <label>
@@ -258,7 +257,7 @@ export default function entertainment({ onRadioChanged }) {
           </label>
         </section>
       </section>
-      <section className={`${dmode()} is-rounded`} style={{marginBottom: "20px"}}>
+      <section className={"nes-container with-title is-rounded"} style={{marginBottom: "20px"}}>
         <p className={"title"}>{t("docs:Music")}</p>
         <section style={{display: 'flex', flexDirection: 'column'}}>
           <label>

@@ -12,7 +12,7 @@ import Politics from '../components/sections/docs/politics'
 import Contribution from '../components/sections/docs/contribution'
 import styles from './docs.module.css'
 import GenerateSection from '../components/sections/docs/generateSection'
-import InfoSection  from '../components/sections/docs/infoSection'
+import InfoSection from '../components/sections/docs/infoSection'
 
 export default class Docs extends React.Component {
 
@@ -21,38 +21,50 @@ export default class Docs extends React.Component {
   }
 
   generateUrcode = () => {
-    let urcode = Object.values(this.state).filter(key => typeof(key)==="string")
+    let urcode = Object.values(this.state).filter(key => typeof (key) === "string")
     this.setState({
       urcode: urcode,
       codeBox: true
     })
   }
-  
+
   onRadioChanged = (e) => {
     this.setState({
       [e.currentTarget.name]: e.currentTarget.value
     });
   }
 
+  onCheckBoxChange = (e) => {
+    if(e.target.checked){
+      this.setState({
+        [e.currentTarget.name]: e.currentTarget.value
+      });
+    } else {
+      this.setState({
+        [e.currentTarget.name]: null
+      });
+    }     
+  }
+
   render() {
     return (
       <Layout>
         <NavBar />
-        <section className={styles.content}>      
-          <InfoSection/>    
+        <section className={styles.content}>
+          <InfoSection />
           <Interest onRadioChanged={this.onRadioChanged} />
           <Appearance onRadioChanged={this.onRadioChanged} />
-          <FieldOfInterest onRadioChanged={this.onRadioChanged} />
+          <FieldOfInterest onRadioChanged={this.onRadioChanged} onChangeCheckBox={this.onCheckBoxChange}/>
           <Lifestyle onRadioChanged={this.onRadioChanged} />
           <Computer onRadioChanged={this.onRadioChanged} />
           <Politics onRadioChanged={this.onRadioChanged} />
           <Entertainment onRadioChanged={this.onRadioChanged} />
-          <GenerateSection codeBox={this.state.codeBox} urcode={this.state.urcode} generateUrcode={this.generateUrcode}/>          
+          <GenerateSection codeBox={this.state.codeBox} urcode={this.state.urcode} generateUrcode={this.generateUrcode} />
           <Contribution />
         </section>
         <Footer />
       </Layout>
     )
   }
-  
+
 }

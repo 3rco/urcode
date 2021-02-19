@@ -1,12 +1,11 @@
 import useTranslation from 'next-translate/useTranslation'
-import dmode from '../../../utils/darkMode'
 import styles from './interest.module.css'
 
 export default function interest({ onRadioChanged }) {
   let { t } = useTranslation()
 
   return (
-    <section className={dmode()} style={{marginBottom: "20px"}}>
+    <section className={"nes-container with-title"} style={{marginBottom: "20px"}}>
       <p className={"title"}>{t("docs:Interest")}</p>
       <section className={styles.options}>
         <label>

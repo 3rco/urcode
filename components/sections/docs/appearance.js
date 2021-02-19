@@ -1,14 +1,13 @@
 import useTranslation from 'next-translate/useTranslation'
-import dmode from '../../../utils/darkMode'
 
 export default function Appearance({ onRadioChanged }) {
   let { t } = useTranslation() 
 
   return (
-    <section className={dmode()} style={{marginBottom: "20px"}}>
+    <section className={"nes-container with-title"} style={{marginBottom: "20px"}}>
         <p className={"title"}>{t("docs:Appearance")}</p>
         <blockquote>{t("docs:Appearance bq")}</blockquote>
-        <section className={`${dmode()} is-rounded`} style={{marginBottom: "20px"}}>
+        <section className={"nes-container with-title is-rounded"} style={{marginBottom: "20px"}}>
           <p className={"title"}>{t("docs:Dress")}</p>
           <blockquote>{t("docs:Dress bq")}</blockquote>
           <section style={{display: 'flex', flexDirection: 'column'}}>
@@ -64,9 +63,9 @@ export default function Appearance({ onRadioChanged }) {
             </label>
           </section>
         </section>
-        <section className={`${dmode()} is-rounded`}>
+        <section className={"nes-container with-title is-rounded"} style={{marginBottom: "20px"}}>
           <p className={"title"}>{t("docs:Body")}</p>
-          <section className={`${dmode()} is-rounded`} style={{marginBottom: "20px"}}>
+          <section className={"nes-container with-title is-rounded"} style={{marginBottom: "20px"}}>
             <p className={"title"}>{t("docs:Length")}</p>
             <section style={{display: 'flex', flexDirection: 'column'}}>
               <label>
@@ -101,7 +100,7 @@ export default function Appearance({ onRadioChanged }) {
               </label>
             </section>
           </section>
-          <section className={`${dmode()} is-rounded`} style={{marginBottom: "20px"}}>
+          <section className={"nes-container with-title is-rounded"} style={{marginBottom: "20px"}}>
             <p className={"title"}>{t("docs:Roundness")}</p>
             <section style={{display: 'flex', flexDirection: 'column'}}>
               <label>
@@ -137,9 +136,10 @@ export default function Appearance({ onRadioChanged }) {
             </section>
           </section>
         </section>
-        <section className={`${dmode()} is-rounded`} style={{marginBottom: "20px", display: 'flex', flexDirection: 'column'}}>
+        <section className={"nes-container with-title is-rounded"} style={{margiBottom: "20px"}}>
           <p className={"title"}>{t("docs:Age")}</p>
-          <label>
+         <section style={{display: 'flex', flexDirection: 'column'}}>
+         <label>
             <input type="radio" className="nes-radio" 
               value="a5 " name="age" onChange={(e) => onRadioChanged(e)}/>
             <span>a5: {'>'}60</span>
@@ -199,6 +199,7 @@ export default function Appearance({ onRadioChanged }) {
               value="" name="age" onChange={(e) => onRadioChanged(e)}/>
             <span>{t("docs:/a")}</span>
           </label>
+         </section>         
         </section>
     </section>
   )

@@ -1,13 +1,12 @@
 import useTranslation from 'next-translate/useTranslation'
-import dmode from '../../../utils/darkMode'
 
 export default function lifestyle({ onRadioChanged }) {
   let { t } = useTranslation()
 
   return (
-    <section className={dmode()} style={{marginBottom: "20px"}}>
+    <section className={"nes-container with-title"} style={{marginBottom: "20px"}}>
       <p className={"title"}>{t("docs:Lifestyle")}</p>
-      <section className={`${dmode()} is-rounded`} style={{marginBottom: "20px"}}>
+      <section className={"nes-container with-title is-rounded"} style={{marginBottom: "20px"}}>
         <p className={"title"}>{t("docs:Education")}</p>
         <section style={{display: 'flex', flexDirection: 'column'}}>
           <label>
@@ -47,7 +46,7 @@ export default function lifestyle({ onRadioChanged }) {
           </label>
         </section>
       </section>
-      <section className={`${dmode()} is-rounded`} style={{marginBottom: "20px"}}>
+      <section className={"nes-container with-title is-rounded"} style={{marginBottom: "20px"}}>
         <p className={"title"}>{t("docs:House")}</p>
         <section style={{display: 'flex', flexDirection: 'column'}}>
           <label>
@@ -82,7 +81,7 @@ export default function lifestyle({ onRadioChanged }) {
           </label>
         </section>
       </section>
-      <section className={`${dmode()} is-rounded`} style={{marginBottom: "20px"}}>
+      <section className={"nes-container with-title is-rounded"} style={{marginBottom: "20px"}}>
         <p className={"title"}>{t("docs:Relationship")}</p>
         <blockquote>{t("docs:Relationship bq")}</blockquote>
         <section style={{display: 'flex', flexDirection: 'column'}}>
@@ -118,7 +117,7 @@ export default function lifestyle({ onRadioChanged }) {
           </label>
         </section>
       </section>
-      <section className={`${dmode()} is-rounded`} style={{marginBottom: "20px"}}>
+      <section className={"nes-container with-title is-rounded"} style={{marginBottom: "20px"}}>
         <p className={"title"}>{t("docs:Job")}</p>
         <section style={{display: 'flex', flexDirection: 'column'}}>
           <label>
