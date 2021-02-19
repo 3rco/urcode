@@ -197,7 +197,7 @@
   "Music": "Müzik",
   "mu2": "Sevdiğim sanatçının tüm şarkılarını ezbere bilirim",
   "mu+": "Yeni çıkan ne var kontrol ederim",
-  "mu ": "Belli bir tarzım yok herşeyi dinlerim",
+  "mu": "Belli bir tarzım yok herşeyi dinlerim",
   "mu-": "İsmini dahi bilmediğim müzik türleri var ",
   "mu-2": "2012’den beri aynı 10 şarkıyı dinliyorum",
   "/mu":"Cevap vermek istemiyorum",
@@ -207,7 +207,7 @@
   "Code": "Kod",
   "CCode":"Yukarıdaki bağlantı üzerinden örneğe bakarak kendi ürettiğiniz urcodu yayınlanmasını istediğiniz kullanıcı adı ile birlikte mevcut koda ekleyip katkı yapabilirsiniz. En kısa zamanda dönüş yapıyoruz.",
   "CCode2":"Çeviri, hata ayıklama, geliştirme gibi tüm katkılarınızı yine repo üzerinden yapabilirsiniz.",
-  "Donate": "Bağış",
+  "Donate": "Dogecoin ile Bağış",
   "CDonate": "",
   "Share": "Paylaş",
   "CShare": ""
