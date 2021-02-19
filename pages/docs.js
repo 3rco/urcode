@@ -26,7 +26,6 @@ export default class Docs extends React.Component {
       urcode: urcode,
       codeBox: true
     })
-    console.log('urc:', urcode)
   }
   
   onRadioChanged = (e) => {
