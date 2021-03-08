@@ -1,10 +1,11 @@
 import useTranslation from 'next-translate/useTranslation'
+import styles from './infoSection.module.css'
 
 export default function generateSection() {
   let { t } = useTranslation()
 
   return (
-    <section style={{display: 'flex',  justifyContent: 'center', textAlign:'center', marginBottom:20}}>
+    <section className={styles.infoSection}>
     {t("docs:Info")}
     </section>
   )

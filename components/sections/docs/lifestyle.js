@@ -1,13 +1,14 @@
 import useTranslation from 'next-translate/useTranslation'
+import styles from './lifestyle.module.css'
 
 export default function lifestyle({ onRadioChanged }) {
   let { t } = useTranslation()
 
   return (
-    <section className={"nes-container with-title"} style={{marginBottom: "20px"}}>
-      <p className={"title"}>{t("docs:Lifestyle")}</p>
-      <section className={"nes-container with-title is-rounded"} style={{marginBottom: "20px"}}>
-        <p className={"title"}>{t("docs:Education")}</p>
+    <section className={"nes-container with-title " + styles.lifestyle}>
+      <p className={"title " + styles.lifeTitle}>{t("docs:Lifestyle")}</p>
+      <section className={"nes-container with-title is-rounded " + styles.lifestyle}>
+        <p className={"title " + styles.lifeTitle}>{t("docs:Education")}</p>
         <section style={{display: 'flex', flexDirection: 'column'}}>
           <label>
             <input type="radio" className="nes-radio" 
@@ -46,8 +47,8 @@ export default function lifestyle({ onRadioChanged }) {
           </label>
         </section>
       </section>
-      <section className={"nes-container with-title is-rounded"} style={{marginBottom: "20px"}}>
-        <p className={"title"}>{t("docs:House")}</p>
+      <section className={"nes-container with-title is-rounded " + styles.lifestyle}>
+        <p className={"title " + styles.lifeTitle}>{t("docs:House")}</p>
         <section style={{display: 'flex', flexDirection: 'column'}}>
           <label>
             <input type="radio" className="nes-radio" 
@@ -81,8 +82,8 @@ export default function lifestyle({ onRadioChanged }) {
           </label>
         </section>
       </section>
-      <section className={"nes-container with-title is-rounded"} style={{marginBottom: "20px"}}>
-        <p className={"title"}>{t("docs:Relationship")}</p>
+      <section className={"nes-container with-title is-rounded " + styles.lifestyle}>
+        <p className={"title " + styles.lifeTitle}>{t("docs:Relationship")}</p>
         <blockquote>{t("docs:Relationship bq")}</blockquote>
         <section style={{display: 'flex', flexDirection: 'column'}}>
           <label>
@@ -117,8 +118,8 @@ export default function lifestyle({ onRadioChanged }) {
           </label>
         </section>
       </section>
-      <section className={"nes-container with-title is-rounded"} style={{marginBottom: "20px"}}>
-        <p className={"title"}>{t("docs:Job")}</p>
+      <section className={"nes-container with-title is-rounded " + styles.lifestyle}>
+        <p className={"title " + styles.lifeTitle}>{t("docs:Job")}</p>
         <section style={{display: 'flex', flexDirection: 'column'}}>
           <label>
             <input type="radio" className="nes-radio" 

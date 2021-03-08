@@ -1,14 +1,15 @@
 import useTranslation from 'next-translate/useTranslation'
+import styles from './entertainment.module.css'
 
 export default function entertainment({ onRadioChanged }) {
   let { t } = useTranslation()
 
   return (
-    <section className={"nes-container with-title"} style={{marginBottom: "20px"}}>
-      <p className={"title"}>{t("docs:Entertainment")}</p>
+    <section className={"nes-container with-title " + styles.entertainment}>
+      <p className={"title " + styles.entTitle}>{t("docs:Entertainment")}</p>
       <blockquote>{t("docs:Entertainment bq")}</blockquote>
-      <section className={"nes-container with-title is-rounded"} style={{marginBottom: "20px"}}>
-        <p className={"title"}>{t("docs:Cinema")} {t("docs:Theatre")}</p>
+      <section className={"nes-container with-title is-rounded " + styles.entertainment}>
+        <p className={"title " + styles.entTitle}>{t("docs:Cinema")} {t("docs:Theatre")}</p>
         <section style={{display: 'flex', flexDirection: 'column'}}>
           <label>
             <input type="radio" className="nes-radio" name="ct" 
@@ -47,8 +48,8 @@ export default function entertainment({ onRadioChanged }) {
           </label>
         </section>
       </section>
-      <section className={"nes-container with-title is-rounded"} style={{marginBottom: "20px"}}>
-        <p className={"title"}>{t("docs:Movie")}</p>
+      <section className={"nes-container with-title is-rounded " + styles.entertainment}>
+        <p className={"title " + styles.entTitle}>{t("docs:Movie")}</p>
         <section style={{display: 'flex', flexDirection: 'column'}}>
           <label>
             <input type="radio" className="nes-radio" 
@@ -92,8 +93,8 @@ export default function entertainment({ onRadioChanged }) {
           </label>
         </section>
       </section>
-      <section className={"nes-container with-title is-rounded"} style={{marginBottom: "20px"}}>
-        <p className={"title"}>{t("docs:Series")}</p>
+      <section className={"nes-container with-title is-rounded " + styles.entertainment}>
+        <p className={"title " + styles.entTitle}>{t("docs:Series")}</p>
         <section style={{display: 'flex', flexDirection: 'column'}}>
           <label>
             <input type="radio" className="nes-radio" 
@@ -142,8 +143,8 @@ export default function entertainment({ onRadioChanged }) {
           </label>
         </section>
       </section>
-      <section className={"nes-container with-title is-rounded"} style={{marginBottom: "20px"}}>
-        <p className={"title"}>{t("docs:TV")}</p>
+      <section className={"nes-container with-title is-rounded " + styles.entertainment}>
+        <p className={"title " + styles.entTitle}>{t("docs:TV")}</p>
         <section style={{display: 'flex', flexDirection: 'column'}}>
           <label>
             <input type="radio" className="nes-radio" 
@@ -182,8 +183,8 @@ export default function entertainment({ onRadioChanged }) {
           </label>
         </section>
       </section>
-      <section className={"nes-container with-title is-rounded"} style={{marginBottom: "20px"}}>
-        <p className={"title"}>{t("docs:Book")}</p>
+      <section className={"nes-container with-title is-rounded " + styles.entertainment}>
+        <p className={"title " + styles.entTitle}>{t("docs:Book")}</p>
         <section style={{display: 'flex', flexDirection: 'column'}}>
           <label>
             <input type="radio" className="nes-radio" 
@@ -217,8 +218,8 @@ export default function entertainment({ onRadioChanged }) {
           </label>
         </section>
       </section>
-      <section className={"nes-container with-title is-rounded"} style={{marginBottom: "20px"}}>
-        <p className={"title"}>{t("docs:Game")}</p>
+      <section className={"nes-container with-title is-rounded " + styles.entertainment}>
+        <p className={"title " + styles.entTitle}>{t("docs:Game")}</p>
         <section style={{display: 'flex', flexDirection: 'column'}}>
           <label>
             <input type="radio" className="nes-radio" 
@@ -257,8 +258,8 @@ export default function entertainment({ onRadioChanged }) {
           </label>
         </section>
       </section>
-      <section className={"nes-container with-title is-rounded"} style={{marginBottom: "20px"}}>
-        <p className={"title"}>{t("docs:Music")}</p>
+      <section className={"nes-container with-title is-rounded " + styles.entertainment}>
+        <p className={"title " + styles.entTitle}>{t("docs:Music")}</p>
         <section style={{display: 'flex', flexDirection: 'column'}}>
           <label>
             <input type="radio" className="nes-radio" 

@@ -1,13 +1,14 @@
 import useTranslation from 'next-translate/useTranslation'
+import styles from './computer.module.css'
 
 export default function computer({ onRadioChanged }) {
   let { t } = useTranslation() 
 
   return (
-    <section className={"nes-container with-title"} style={{marginBottom: "20px"}}>
-      <p className={"title"}>{t("docs:Computer")}</p>
-      <section className={"nes-container with-title is-rounded"} style={{marginBottom: "20px"}}>
-        <p className={"title"}>{t("docs:Web")}</p>
+    <section className={"nes-container with-title " + styles.computer}>
+      <p className={"title " + styles.compTitle}>{t("docs:Computer")}</p>
+      <section className={"nes-container with-title is-rounded " + styles.computer}>
+        <p className={"title " + styles.compTitle}>{t("docs:Web")}</p>
         <section style={{display: 'flex', flexDirection: 'column'}}>
           <label>
             <input type="radio" className="nes-radio" 
@@ -51,8 +52,8 @@ export default function computer({ onRadioChanged }) {
           </label>
         </section>
       </section>
-      <section className={"nes-container with-title is-rounded"} style={{marginBottom: "20px"}}>
-        <p className={"title"}>{t("docs:Smart Phone")}</p>
+      <section className={"nes-container with-title is-rounded " + styles.computer}>
+        <p className={"title " + styles.compTitle}>{t("docs:Smart Phone")}</p>
         <section style={{display: 'flex', flexDirection: 'column'}}>
           <label>
             <input type="radio" className="nes-radio" 
@@ -91,8 +92,8 @@ export default function computer({ onRadioChanged }) {
           </label>
         </section>
       </section>
-      <section className={"nes-container with-title is-rounded"} style={{marginBottom: "20px"}}>
-        <p className={"title"}>{t("docs:Programming")}</p>
+      <section className={"nes-container with-title is-rounded " + styles.computer}>
+        <p className={"title " + styles.compTitle}>{t("docs:Programming")}</p>
         <section style={{display: 'flex', flexDirection: 'column'}}>
           <label>
             <input type="radio" className="nes-radio" 

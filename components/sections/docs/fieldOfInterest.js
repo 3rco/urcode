@@ -1,11 +1,12 @@
 import useTranslation from 'next-translate/useTranslation'
+import styles from './fieldOfInterest.module.css'
 
 export default function fieldOfInterest({ onRadioChanged, onChangeCheckBox }) {
   let { t } = useTranslation()
 
   return (
-    <section className={"nes-container with-title"} style={{ marginBottom: "20px" }}>
-      <p className={"title"}>{t("docs:Field Of Interest")}</p>
+    <section className={"nes-container with-title " + styles.interest}>
+      <p className={"title " + styles.intTitle}>{t("docs:Field Of Interest")}</p>
       <blockquote>{t("docs:Field Of Interest bq")}</blockquote>
       <section style={{ display: 'flex', flexDirection: 'column' }}>
         <label>

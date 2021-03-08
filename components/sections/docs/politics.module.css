@@ -1,0 +1,19 @@
+.politics {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.polTitle {
+    font-size: 16px !important;
+}
+@media only screen and (max-width: 500px) {
+
+    .politics {
+        font-size: 9px;
+        margin-bottom: 12px;
+        padding-left: 3px !important;
+        padding-right: 3px !important;
+    }
+    .polTitle {
+        font-size: 10px !important;
+    }
+}

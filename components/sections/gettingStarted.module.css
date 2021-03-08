@@ -18,3 +18,26 @@
     font-size: 15px;
     line-height: 30px !important;
 }
+@media only screen and (max-width: 500px) {
+
+    .inspiration {
+        text-align: right;
+        font-style: italic;
+        font-size: 9px;
+    }
+    
+    .h2 {
+        font-size: 18px;
+        line-height: 30px !important;
+    }
+    
+    .h3 {
+        font-size: 14px;
+        line-height: 30px !important;
+    }
+    
+    .p {
+        font-size: 9px;
+        line-height: 30px !important;
+    }
+}

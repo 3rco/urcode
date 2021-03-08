@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  
 }
 
 .typing {
@@ -13,4 +14,9 @@
 
 .typing > span {
   color: #000000;
+}
+@media only screen and (max-width: 500px) {
+  .typing {
+    font-size: 25px;
+  }
 }

@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
  
+
 body.light-mode {
-  width: 1200px;
+  width: 1300px;
   margin: auto !important;
   flex-direction: column;
   font-family: 'Press Start 2P', cursive;
@@ -9,13 +10,32 @@ body.light-mode {
   transition: background-color 0.5s ease;
 }
 body.dark-mode {
-  width: 1200px;
+  width: 1300px;
   margin: auto !important;
   flex-direction: column;
   font-family: 'Press Start 2P', cursive; 
   background-color: gray;
   transition: background-color 0.5s ease;
 }
+
+@media only screen and (max-width: 500px) {
+  body.light-mode {
+    width: 400px;
+    margin: auto !important;
+    flex-direction: column;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #ffffff;
+    transition: background-color 0.5s ease;
+  }
+  body.dark-mode {
+    width: 400px;
+    margin: auto !important;
+    flex-direction: column;
+    font-family: 'Press Start 2P', cursive; 
+    background-color: gray;
+    transition: background-color 0.5s ease;
+  }
+  }
 
 blockquote {
   border-left: 10px solid #ccc;

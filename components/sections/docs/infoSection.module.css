@@ -1,0 +1,19 @@
+.infoSection {
+    font-size: 16px;
+    margin-bottom: 20px;
+    display: 'flex';  
+    justify-content: 'center'; 
+    text-align:'center'; 
+}
+@media only screen and (max-width: 500px) {
+
+    .infoSection {
+        font-size: 9px;
+        margin-bottom: 12px;
+        padding-left: 10px !important;
+        padding-right: 3px !important;
+        display: 'flex';  
+        justify-content: 'center'; 
+        text-align:'center'; 
+    }
+}

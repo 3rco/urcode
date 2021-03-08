@@ -1,0 +1,19 @@
+.entertainment {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.entTitle {
+    font-size: 16px !important;
+}
+@media only screen and (max-width: 500px) {
+
+    .entertainment {
+        font-size: 9px;
+        margin-bottom: 12px;
+        padding-left: 3px !important;
+        padding-right: 3px !important;
+    }
+    .entTitle {
+        font-size: 10px !important;
+    }
+}

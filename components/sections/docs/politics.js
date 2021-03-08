@@ -1,11 +1,12 @@
 import useTranslation from 'next-translate/useTranslation'
+import styles from './politics.module.css'
 
 export default function politics({ onRadioChanged }) {
   let { t } = useTranslation()
   
   return (
-    <section className={"nes-container with-title"} style={{marginBottom: "20px"}}>
-      <p className={"title"}>{t("docs:Politics")}</p>
+    <section className={"nes-container with-title " + styles.politics}>
+      <p className={"title " + styles.polTitle}>{t("docs:Politics")}</p>
       <section style={{display: 'flex', flexDirection: 'column'}}>
         <label>
             <input type="radio" className="nes-radio" 

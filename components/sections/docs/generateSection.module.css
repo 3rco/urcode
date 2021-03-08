@@ -1,19 +1,21 @@
-.appearance {
+.generate {
     font-size: 16px;
     margin-bottom: 20px;
 }
-.appTitle {
-    font-size: 16px !important;
+
+.balloon {
+    font-size:16px;
 }
+
 @media only screen and (max-width: 500px) {
 
-    .appearance {
+    .generate {
         font-size: 9px;
         margin-bottom: 12px;
         padding-left: 3px !important;
         padding-right: 3px !important;
-    }
-    .appTitle {
-        font-size: 10px !important;
+    }    
+    .balloon {
+        font-size:9px;
     }
 }

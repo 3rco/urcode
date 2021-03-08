@@ -5,8 +5,8 @@ export default function interest({ onRadioChanged }) {
   let { t } = useTranslation()
 
   return (
-    <section className={"nes-container with-title"} style={{marginBottom: "20px"}}>
-      <p className={"title"}>{t("docs:Interest")}</p>
+    <section className={"nes-container with-title " + styles.interest}>
+      <p className={"title " + styles.intTitle}>{t("docs:Interest")}</p>
       <section className={styles.options}>
         <label>
           <input type="radio" className="nes-radio" 

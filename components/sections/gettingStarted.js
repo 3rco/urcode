@@ -7,7 +7,7 @@ export default function gettingStarted() {
   let { t } = useTranslation()
   
   return (
-    <div className={dmode()} style={{margin:50}}>
+    <div className={dmode()} style={{margin:10, marginTop:35}}>
        
         <p className={"title"}>{t("landing:Getting Started")}</p>
 
