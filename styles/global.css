@@ -20,7 +20,7 @@ body.dark-mode {
 
 @media only screen and (max-width: 500px) {
   body.light-mode {
-    width: 400px;
+    width: 360px;
     margin: auto !important;
     flex-direction: column;
     font-family: 'Press Start 2P', cursive;
@@ -28,7 +28,7 @@ body.dark-mode {
     transition: background-color 0.5s ease;
   }
   body.dark-mode {
-    width: 400px;
+    width: 360px;
     margin: auto !important;
     flex-direction: column;
     font-family: 'Press Start 2P', cursive; 
