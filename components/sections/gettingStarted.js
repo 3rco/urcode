@@ -9,7 +9,7 @@ export default function gettingStarted() {
   return (
     <div className={dmode()} style={{margin:10, marginTop:35}}>
        
-        <p className={"title"}>{t("landing:Getting Started")}</p>
+        <p className={"title " + styles.getTitle}>{t("landing:Getting Started")}</p>
 
         <h3 className={styles.h3}>{t("landing:Our Goal")}</h3>
         <p className={styles.p}>

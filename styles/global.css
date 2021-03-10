@@ -37,6 +37,25 @@ body.dark-mode {
   }
   }
 
+  @media (max-width:1300px) and (min-width:501px) {
+    body.light-mode {
+      width: 600px;
+      margin: auto !important;
+      flex-direction: column;
+      font-family: 'Press Start 2P', cursive;
+      background-color: #ffffff;
+      transition: background-color 0.5s ease;
+    }
+    body.dark-mode {
+      width: 600px;
+      margin: auto !important;
+      flex-direction: column;
+      font-family: 'Press Start 2P', cursive; 
+      background-color: gray;
+      transition: background-color 0.5s ease;
+    }
+    }
+
 blockquote {
   border-left: 10px solid #ccc;
   margin: 1.5em 10px;
