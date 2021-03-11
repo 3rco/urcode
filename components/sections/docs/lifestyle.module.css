@@ -5,7 +5,7 @@
 .lifeTitle {
     font-size: 16px !important;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 480px) {
 
     .lifestyle {
         font-size: 9px;

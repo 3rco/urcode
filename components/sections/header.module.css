@@ -15,7 +15,7 @@
 .typing > span {
   color: #000000;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 480px) {
   .typing {
     font-size: 25px;
   }

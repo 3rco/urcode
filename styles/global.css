@@ -18,7 +18,7 @@ body.dark-mode {
   transition: background-color 0.5s ease;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 480px) {
   body.light-mode {
     width: 360px;
     margin: auto !important;
@@ -37,7 +37,7 @@ body.dark-mode {
   }
   }
 
-  @media (max-width:1300px) and (min-width:501px) {
+  @media (max-width:1024px) and (min-width:768px) {
     body.light-mode {
       width: 600px;
       margin: auto !important;
