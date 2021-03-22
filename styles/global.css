@@ -37,6 +37,25 @@ body.dark-mode {
   }
   }
 
+  @media only screen and (max-width: 400px) {
+    body.light-mode {
+      width: 320px;
+      margin: auto !important;
+      flex-direction: column;
+      font-family: 'Press Start 2P', cursive;
+      background-color: #ffffff;
+      transition: background-color 0.5s ease;
+    }
+    body.dark-mode {
+      width: 320px;
+      margin: auto !important;
+      flex-direction: column;
+      font-family: 'Press Start 2P', cursive; 
+      background-color: gray;
+      transition: background-color 0.5s ease;
+    }
+    }
+
   @media (max-width:1024px) and (min-width:768px) {
     body.light-mode {
       width: 600px;
